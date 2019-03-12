@@ -75,30 +75,34 @@ public class TMMath {
         return this.bigDecimal.toString();
     }
 
+    private BigDecimal addToBigDecimal(BigDecimal bigDecimal){
+        return this.bigDecimal.add(bigDecimal);
+    }
+
     public TMMath add(Double ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.add(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.addToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath add(Integer ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.add(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.addToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath add(Long ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.add(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.addToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath add(Float ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.add(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.addToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
@@ -146,30 +150,34 @@ public class TMMath {
         return this;
     }
 
+    private BigDecimal multiplyToBigDecimal(BigDecimal bigDecimal){
+        return this.bigDecimal.multiply(bigDecimal);
+    }
+
     public TMMath multiply(Double ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.multiply(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.multiplyToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath multiply(Integer ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.multiply(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.multiplyToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath multiply(Long ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.multiply(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.multiplyToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath multiply(Float ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.multiply(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.multiplyToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
@@ -195,23 +203,27 @@ public class TMMath {
         return this;
     }
 
+    private BigDecimal subtractToBigDecimal(BigDecimal bigDecimal){
+        return this.bigDecimal.subtract(bigDecimal);
+    }
+
     public TMMath subtract(Double ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.subtract(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.subtractToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath subtract(Integer ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.subtract(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.subtractToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }
 
     public TMMath subtract(Long ...number) {
         for (int i = 0; i < number.length; i++){
-            this.bigDecimal = this.bigDecimal.subtract(this.toBigDecimal(number[i]));
+            this.bigDecimal = this.subtractToBigDecimal(this.toBigDecimal(number[i]));
         }
         return this;
     }

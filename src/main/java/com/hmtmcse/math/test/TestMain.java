@@ -1,7 +1,6 @@
-package com.hmtmcse.test;
+package com.hmtmcse.math.test;
 
 import com.hmtmcse.math.TMMath;
-
 import java.math.RoundingMode;
 
 public class TestMain {
