@@ -6,7 +6,7 @@ import java.math.RoundingMode;
 public class TMMath {
 
     public static RoundingMode divideRoundMode = RoundingMode.HALF_UP;
-    public static Integer divideRoundScale = 1000;
+    public static Integer divideRoundScale = 32;
 
     private BigDecimal bigDecimal = null;
 
@@ -60,6 +60,11 @@ public class TMMath {
 
     public Double toDouble(){
         return this.bigDecimal.doubleValue();
+    }
+
+
+    public String toPlainString(){
+        return this.bigDecimal.toPlainString();
     }
 
     public Long toLong(){
