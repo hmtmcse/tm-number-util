@@ -58,6 +58,11 @@ public class TMMath {
         return BigDecimal.valueOf(number);
     }
 
+
+    public BigDecimal toBigDecimal(){
+        return this.bigDecimal;
+    }
+
     public Double toDouble(){
         return this.bigDecimal.doubleValue();
     }
@@ -82,6 +87,13 @@ public class TMMath {
 
     private BigDecimal addToBigDecimal(BigDecimal bigDecimal){
         return this.bigDecimal.add(bigDecimal);
+    }
+
+    public TMMath add(BigDecimal ...number) {
+        for (int i = 0; i < number.length; i++){
+            this.bigDecimal = this.addToBigDecimal(number[i]);
+        }
+        return this;
     }
 
     public TMMath add(Double ...number) {
@@ -112,6 +124,10 @@ public class TMMath {
         return this;
     }
 
+    public TMMath add(BigDecimal number){
+        this.bigDecimal = this.bigDecimal.add(number);
+        return this;
+    }
 
     public TMMath add(Double number){
         this.bigDecimal = this.bigDecimal.add(this.toBigDecimal(number));
@@ -131,6 +147,11 @@ public class TMMath {
 
     public TMMath add(Float number){
         this.bigDecimal = this.bigDecimal.add(this.toBigDecimal(number));
+        return this;
+    }
+
+    public TMMath multiply(BigDecimal number){
+        this.bigDecimal = this.bigDecimal.multiply(number);
         return this;
     }
 
@@ -157,6 +178,13 @@ public class TMMath {
 
     private BigDecimal multiplyToBigDecimal(BigDecimal bigDecimal){
         return this.bigDecimal.multiply(bigDecimal);
+    }
+
+    public TMMath multiply(BigDecimal ...number) {
+        for (int i = 0; i < number.length; i++){
+            this.bigDecimal = this.multiplyToBigDecimal(number[i]);
+        }
+        return this;
     }
 
     public TMMath multiply(Double ...number) {
@@ -187,6 +215,11 @@ public class TMMath {
         return this;
     }
 
+    public TMMath subtract(BigDecimal number){
+        this.bigDecimal = this.bigDecimal.subtract(number);
+        return this;
+    }
+
     public TMMath subtract(Double number){
         this.bigDecimal = this.bigDecimal.subtract(this.toBigDecimal(number));
         return this;
@@ -210,6 +243,13 @@ public class TMMath {
 
     private BigDecimal subtractToBigDecimal(BigDecimal bigDecimal){
         return this.bigDecimal.subtract(bigDecimal);
+    }
+
+    public TMMath subtract(BigDecimal ...number) {
+        for (int i = 0; i < number.length; i++){
+            this.bigDecimal = this.subtractToBigDecimal(number[i]);
+        }
+        return this;
     }
 
     public TMMath subtract(Double ...number) {
@@ -254,6 +294,11 @@ public class TMMath {
         return this.bigDecimal.divide(number, divideRoundScale,  divideRoundMode);
     }
 
+    public TMMath divide(BigDecimal number){
+        this.bigDecimal = divideWithScaleAndMode(number);
+        return this;
+    }
+
     public TMMath divide(Double number){
         this.bigDecimal = divideWithScaleAndMode(this.toBigDecimal(number));
         return this;
@@ -272,6 +317,13 @@ public class TMMath {
 
     public TMMath divide(Float number){
         this.bigDecimal = divideWithScaleAndMode(this.toBigDecimal(number));
+        return this;
+    }
+
+    public TMMath divide(BigDecimal ...number) {
+        for (int i = 0; i < number.length; i++){
+            this.bigDecimal = divideWithScaleAndMode(number[i]);
+        }
         return this;
     }
 
