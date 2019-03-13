@@ -9,11 +9,28 @@ public class TMTaxErrorTestDataSet {
     private List<TMTaxErrorTestData> dataSet = new ArrayList<>();
 
     public TMTaxErrorTestDataSet(){
-        dataSet.add(new TMTaxErrorTestData(1.70, 3));
         dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(100.0));
         dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(200.0));
         dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(300.0));
         dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(400.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(500.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(600.));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(700.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(800.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(900.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1000.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1100.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1200.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1300.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1400.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1500.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1600.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1700.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1800.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(1900.0));
+        dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(2000.0));
+
+        dataSet.add(new TMTaxErrorTestData(1.70, 3));
         dataSet.add(new TMTaxErrorTestData(1.70, 1).setTaxRateInOutSame(10.0));
     }
 
