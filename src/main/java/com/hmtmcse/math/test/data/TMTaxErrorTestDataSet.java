@@ -1,5 +1,8 @@
 package com.hmtmcse.math.test.data;
 
+import com.hmtmcse.math.TMMath;
+
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +12,11 @@ public class TMTaxErrorTestDataSet {
     private List<TMTaxErrorTestData> dataSet = new ArrayList<>();
 
     public TMTaxErrorTestDataSet(){
+
+        dataSet.add(new TMTaxErrorTestData(123.46, 1).setTaxRateInclusive(59.95).setOutTaxRate(50.00));
+        dataSet.add(new TMTaxErrorTestData(149.00, 1).setTaxRateInOutSame(10.00));
+
+
         dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(100.0));
         dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(200.0));
         dataSet.add(new TMTaxErrorTestData(22.95, 1).setTaxRateInOutSame(300.0));
@@ -32,6 +40,8 @@ public class TMTaxErrorTestDataSet {
 
         dataSet.add(new TMTaxErrorTestData(1.70, 3));
         dataSet.add(new TMTaxErrorTestData(1.70, 1).setTaxRateInOutSame(10.0));
+
+
     }
 
 
