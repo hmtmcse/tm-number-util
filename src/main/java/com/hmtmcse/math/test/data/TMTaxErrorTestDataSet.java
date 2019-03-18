@@ -14,6 +14,10 @@ public class TMTaxErrorTestDataSet {
     public TMTaxErrorTestDataSet(){
 
 
+        dataSet.add(new TMTaxErrorTestData(2036854.58, 1).setTaxRateInclusive(1000.0).setOutTaxRate(1000.0));
+        dataSet.add(new TMTaxErrorTestData(203685477.58, 1).setTaxRateInclusive(200.0).setOutTaxRate(200.0));
+
+        dataSet.add(new TMTaxErrorTestData(10.99, 1).setTaxRateInclusive(50.0).setOutTaxRate(50.0));
         dataSet.add(new TMTaxErrorTestData(4.00, 1).setTaxRateInclusive(0.25).setOutTaxRate(0.26));
 
         dataSet.add(new TMTaxErrorTestData(2.00, 1).setTaxRateInclusive(0.26).setOutTaxRate(0.25));
