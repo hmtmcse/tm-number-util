@@ -12,7 +12,7 @@ import java.math.RoundingMode;
 
 public class TaxErrorTest {
 
-    private static Integer scale = 2;
+    private static Integer scale = 4;
 
     public static Double roundUp(Double data){
         return TMMath.start(data).round(scale, RoundingMode.UP).toDouble();
