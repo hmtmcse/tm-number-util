@@ -6,8 +6,6 @@ import com.hmtmcse.console.table.data.TableRowData;
 import com.hmtmcse.math.TMMath;
 import com.hmtmcse.math.test.data.TMMathTestData;
 import com.hmtmcse.math.test.data.TMMathTestDataSet;
-import javafx.beans.binding.ObjectExpression;
-
 import java.math.BigDecimal;
 
 
