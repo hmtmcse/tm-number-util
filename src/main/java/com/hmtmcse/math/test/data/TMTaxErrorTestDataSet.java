@@ -59,6 +59,7 @@ public class TMTaxErrorTestDataSet {
 
         dataSet.add(new TMTaxErrorTestData(1.70, 3));
         dataSet.add(new TMTaxErrorTestData(1.70, 1).setTaxRateInOutSame(10.0));
+        dataSet.add(new TMTaxErrorTestData(28.37, 50).setTaxRateInOutSame(10.0));
 
 
     }
